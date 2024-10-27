@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="Store.html"><img src="images/Nikelogo.jpg" alt="Nike Logo"></a>
+            </div>
+    
+            <!-- Navigation -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="aboutus.html">About-us</a></li>
+                    <li><a href="contact.html">Contact-us</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Search, Cart, and Login -->
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cart">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+                <div class="login-container">
+                    <button id="auth-btn">Login</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <script src="authToggle.js"></script>
+    <main>
+    <!-- Men's Section -->
+    <section id="mens" class="product-section">
+      <div class="container">
+          <h2 class="section-heading">Men's Collection</h2>
+          <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/Air Max 90.avif" alt="Men's Shoe">
+                    <h3>Air Max 90</h3>
+                    <p>$200</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(1, 'Air Max 90', 200, 'images/Air Max 90.avif')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/Air Jordan 1.jpg" alt="Men's Shoe">
+                    <h3>Air Jordan 1</h3>
+                    <p>$130</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(2, 'Air Jordan 1', 130, 'images/Air Jordan 1.jpg')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/React Infinity Run.jpg" alt="Men's Shoe">
+                    <h3>React Infinity Run</h3>
+                    <p>$89</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(3, 'React Infinity Run', 89, 'images/React Infinity Run.jpg')">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/Nike x Travis Scott Air Force 1.jpg" alt="Product Image">
+                    <h3>Nike x Travis Scott Air Force 1</h3>
+                    <p>$1001</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(4, 'Nike x Travis Scott Air Force 1', 1001, 'images/Nike x Travis Scott Air Force 1.jpg')">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="images/Nike P-6000.jpg" alt="Product Image">
+                    <h3>Nike P-6000</h3>
+                    <p>$300</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(5, 'Nike P-6000', 300, 'images/Nike P-6000.jpg')">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="images/Nike Air Max Dn.webp" alt="Product Image">
+                    <h3>Nike Air Max Dn</h3>
+                    <p>$359</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(6, 'Nike Air Max Dn', 359, 'images/Nike Air Max Dn.webp')">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="images/Nike Reax 8 TR.webp" alt="Product Image">
+                    <h3>Nike Reax 8 TR</h3>
+                    <p>$78</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(7, 'Nike Reax 8 TR', 78, 'images/Nike Reax 8 TR.webp')">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="images/Nike Dunk Low Retro.jpeg" alt="Product Image">
+                    <h3>Nike Dunk Low Retro</h3>
+                    <p>$1249</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(8, 'Nike Dunk Low Retro', 1249, 'images/Nike Dunk Low Retro.jpeg')">Add to Cart</button>
+                  </div>
+                <!-- Add 6 more product cards -->
+            </div>
+        </div>
+    </section>
+
+     <!-- Women’s Section -->
+     <section id="womens" class="product-section">
+      <h2 class="section-heading">Women’s Collection</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/Nike Air Max 97 Futura.avif" alt="Product Image">
+            <h3>Nike Air Max 97 Futura</h3>
+            <p>$1590</p>
+            <button class="add-to-cart-btn" onclick="addToCart(9, 'Nike Air Max 97 Futura',1590, 'images/Nike Air Max 97 Futura.avif')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Air Jordan 1 Mid.webp" alt="Product Image">
+            <h3>Air Jordan 1 Mid</h3>
+            <p>$4590</p>
+            <button class="add-to-cart-btn" onclick="addToCart(10, 'Air Jordan 1 Mid', 4590, 'images/Air Jordan 1 Mid.webp')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Dunk Low.jpg" alt="Product Image">
+            <h3>Nike Dunk Low</h3>
+            <p>$4500</p>
+            <button class="add-to-cart-btn" onclick="addToCart(11, 'Nike Dunk Low', 4500, 'images/Nike Dunk Low.jpg')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Air Force 1 Wild.jpeg" alt="Product Image">
+            <h3>Nike Air Force 1 Wild</h3>
+            <p>$500</p>
+            <button class="add-to-cart-btn" onclick="addToCart(12, 'Nike Air Force 1 Wild', 500, 'images/Nike Air Force 1 Wild.jpeg')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Dunk High.webp" alt="Product Image">
+            <h3>Nike Dunk High</h3>
+            <p>$370</p>
+            <button class="add-to-cart-btn" onclick="addToCart(13, 'Nike Dunk High',370, 'images/Nike Dunk High.webp')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Air Force 1 Shadow1.0.png" alt="Product Image">
+            <h3>Nike Air Force 1 Shadow</h3>
+            <p>$2790</p>
+            <button class="add-to-cart-btn" onclick="addToCart(14, 'Nike Air Force 1 Shadow',2790, 'images/Nike Air Force 1 Shadow.jpg')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Court Legacy Lift.png" alt="Product Image">
+            <h3>Nike Court Legacy Lift</h3>
+            <p>$2000</p>
+            <button class="add-to-cart-btn" onclick="addToCart(15, 'Nike Court Legacy Lift',2000, 'images/Nike Court Legacy Lift.png')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Jordan Sophia.webp" alt="Product Image">
+            <h3>Jordan Sophia</h3>
+            <p>$690</p>
+            <button class="add-to-cart-btn" onclick="addToCart(16, 'Jordan Sophia',690, 'images/Jordan Sophia.webp')">Add to Cart</button>
+          </div>
+          <!-- Additional Product Cards... -->
+        </div>
+      </section>
+
+      <!-- Kids Section -->
+    <section id="kids" class="product-section">
+      <h2 class="section-heading">Kid's Collection</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/NikeCourt Legacy.png" alt="Product Image">
+            <h3>NikeCourt Legacy</h3>
+            <p>$279</p>
+            <button class="add-to-cart-btn" onclick="addToCart(17, 'NikeCourt Legacy',279, 'images/NikeCourt Legacy.png')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Air Max SYSTM.png" alt="Product Image">
+            <h3>Nike Air Max SYSTM</h3>
+            <p>$469</p>
+            <button class="add-to-cart-btn" onclick="addToCart(18, 'Nike Air Max SYSTM',469, 'images/Nike Air Max SYSTM.png')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Force 1 Low EasyOn.png" alt="Product Image">
+            <h3>Nike Force 1 Low EasyOn</h3>
+            <p>$549</p>
+            <button class="add-to-cart-btn" onclick="addToCart(19, 'Nike Force 1 Low EasyOn',549, 'images/Nike Force 1 Low EasyOn.png')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Revolution 7.png" alt="Product Image">
+            <h3>Nike Revolution 7</h3>
+            <p>$320</p>
+            <button class="add-to-cart-btn" onclick="addToCart(20, 'Nike Revolution 7', 320, 'images/Nike Revolution 7.png')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Air Max 2013.png" alt="Product Image">
+            <h3>Nike Air Max 2013</h3>
+            <p>$280</p>
+            <button class="add-to-cart-btn" onclick="addToCart(21, 'Nike Air Max 2013',280, 'images/Nike Air Max 2013.png')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Air More Uptempo.png" alt="Product Image">
+            <h3>Nike Air More Uptempo</h3>
+            <p>$459</p>
+            <button class="add-to-cart-btn" onclick="addToCart(22, 'Nike Air More Uptempo',459, 'images/Nike Air More Uptempo.png')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Kawa.jpg" alt="Product Image">
+            <h3>Nike Kawa</h3>
+            <p>$106</p>
+            <button class="add-to-cart-btn" onclick="addToCart(23, 'Nike Kawa',106, 'images/Nike Kawa.jpg')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Tatum 3.webp" alt="Product Image">
+            <h3>Tatum 3</h3>
+            <p>$980</p>
+            <button class="add-to-cart-btn" onclick="addToCart(24, 'Tatum 3',980, 'images/Tatum 3.webp')">Add to Cart</button>
+          </div>
+          <!-- Additional Product Cards... -->
+        </div>
+      </section>
+
+      <!-- New Arrivals Section -->
+    <section id="new-arrivals" class="product-section">
+      <h2 class="section-heading">New Arrivals</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/Nike Cortez SE Suede.png" alt="Product Image">
+            <h3>Nike Cortez SE Suede</h3>
+            <p>$529</p>
+            <button class="add-to-cart-btn" onclick="addToCart(25, 'Nike Cortez SE Suede',529, 'images/Nike Cortez SE Suede.png')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Alphafly 3.png" alt="Product Image">
+            <h3>Nike Alphafly 3</h3>
+            <p>$1290</p>
+            <button class="add-to-cart-btn" onclick="addToCart(26, 'Nike Alphafly 3', 1290, 'images/Nike Alphafly 3.png')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Cortez Leather.png" alt="Product Image">
+            <h3>Nike Cortez Leather</h3>
+            <p>$3700</p>
+            <button class="add-to-cart-btn" onclick="addToCart(27, 'Nike Cortez Leather', 3700, 'images/Nike Cortez Leather.png')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Initiator.webp" alt="Product Image">
+            <h3>Nike Initiator</h3>
+            <p>$609</p>
+            <button class="add-to-cart-btn" onclick="addToCart(28, 'Nike Initiator',609, 'images/Nike Initiator.webp')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Jordan Spizike Low.jpg" alt="Product Image">
+            <h3>Jordan Spizike Low</h3>
+            <p>$490</p>
+            <button class="add-to-cart-btn" onclick="addToCart(29, 'Jordan Spizike Low', 490, 'images/Jordan Spizike Low.jpg')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Offcourt Adjust.png" alt="Product Image">
+            <h3>Nike Offcourt Adjust</h3>
+            <p> $249</p>
+            <button class="add-to-cart-btn" onclick="addToCart(30, 'Nike Offcourt Adjust', 249, 'images/Nike Offcourt Adjust.png')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Jumpman MVP.jpeg" alt="Product Image">
+            <h3>Jumpman MVP</h3>
+            <p>$2500</p>
+            <button class="add-to-cart-btn" onclick="addToCart(31, 'Jumpman MVP',2500, 'images/Jumpman MVP.jpeg')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/Nike Calm.png" alt="Product Image">
+            <h3>Nike Calm</h3>
+            <p>$599</p>
+            <button class="add-to-cart-btn" onclick="addToCart(32, 'Nike Calm',599, 'images/Nike Calm.png')">Add to Cart</button>
+          </div>
+          <!-- Additional Product Cards... -->
+        </div>
+      </section>
+      <script src="storeAndCart.js"></script>
+</main>
+    <!-- Footer (optional) -->
+</body>
+</html>

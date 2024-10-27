@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/Nikelogo.jpg" alt="Nike Logo">
+            </div>
+
+            <!-- Navigation -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="aboutus.html">About-us</a></li>
+                    <li><a href="contact.html">Contact-us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search and Cart -->
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cart">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+                <div class="login-container">
+                    <button id="auth-btn">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="authToggle.js"></script>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unleash Your Potential</h1>
+            <p>Find the perfect gear for your next challenge.</p>
+            <a href="login.html" class="cta-btn">Shop Now</a>
+        </div>
+    </section>
+    <section class="video-gallery">
+        <h2>Latest Nike Ad Campaigns</h2>
+        <div class="video-grid">
+          <div class="video-card">
+            <video controls>
+              <source src="videos/NIKE  - JUST DO IT _ Spec ad - Vandervort Media (VV Media) (1080p, h264, youtube).mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>Nike Just Do It</p>
+          </div>
+          <div class="video-card">
+            <video controls>
+              <source src="videos/Dior Air Jordan 1 - Cinematic Sneaker Video - Josh Barolo (1080p, h264, youtube).mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>Dior Air Jordan</p>
+          </div>
+          <div class="video-card">
+            <video controls>
+              <source src="videos/Nike Running - Spec Commercial - Michael van Vugt (1080p, h264, youtube).mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>Nike Run Wild</p>
+          </div>
+          <div class="video-card">
+            <video controls>
+              <source src="videos/FIND YOUR PASSION _ Nike Spec Ad _ Sony A6400 - Janio (1080p, h264, youtube).mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p>Find your passion</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+            <p>&copy; 2024 Nike Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="authToggle.js"></script>
+</body>
+</html>
